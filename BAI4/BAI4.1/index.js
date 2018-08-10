@@ -4,7 +4,7 @@ var fs = require('fs'); // đọc file
 http.createServer(function(req,res){
 
 res.writeHeader(200,{'Content-Type':'text/html'});
-res.write("Phạm Minh Ánh .I'm Student ....");
+// res.write("Phạm Minh Ánh .I'm Student ....");
 
 fs.createReadStream('index.html').pipe(res);
 
